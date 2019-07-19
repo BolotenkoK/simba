@@ -1,0 +1,116 @@
+
+@font-face{
+    font-family: 'Montserrat Light';
+    src: url("fonts/Monts/Montserrat-Light.eot"),
+        url('fonts/Monts/Montserrat-Light.ttf') format('truetype'),
+        url('fonts/Monts/Montserrat-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Montserrat Regular';
+    src: url("fonts/Monts/Montserrat-Regular.eot"),
+        url('fonts/Monts/Montserrat-Regular.ttf') format('truetype'),
+        url('fonts/Monts/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Montserrat SemiBold';
+    src: url("fonts/Monts/Montserrat-SemiBold.eot"),
+        url('fonts/Monts/Montserrat-SemiBold.ttf') format('truetype'),
+        url('fonts/Monts/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+/*#region Guest Top Navigation*/
+.navbar-header {
+    width: 25%;
+    padding-top: 4px;
+}
+
+.brand-logo {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.brand-logo__icon {
+    width: 100%;
+    height: auto;
+    max-width: 222px;
+    max-height: 74px;
+}
+
+.navbar-collapse {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+
+.navigation-block {
+    width: 52%;
+    margin-block-start: 34px!important;
+    margin-block-end: 6px!important;
+    padding-inline-start: 0px;
+    padding-left: 15px!important;
+}
+
+.navigation-block a{
+    font-size: 14px;
+    color: rgb(153, 170, 153)!important;
+    font-family: 'Montserrat Light';
+    padding-right: 21px!important;
+    padding-left: 0px!important;
+    letter-spacing: 0.5px;
+}
+
+.navbar-user-block {
+    width: 23%;
+    margin-block-start: 34px!important;
+    margin-block-end: 6px!important;
+    padding-inline-start: 0px;
+    margin-right: 0px!important;
+}
+
+.dropdown {
+    padding-left: 6px;
+}
+
+.navbar-user-block a {
+    font-family: 'Montserrat SemiBold';
+    font-weight: 600;
+    color: rgb(26, 48, 3)!important;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.user-authorization {
+    float: right!important;
+}
+
+.user-authorization__link {
+    display: inline-block;
+    padding-right: 0px!important;
+}
+
+
+/*#endregion Guest Top Navigation*/
+
+@media screen and (max-width:767px) {
+    .navbar-header {
+        width: 100%;
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+    }
+
+    .navbar-toggle {
+        margin-right: 0px!important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+}
