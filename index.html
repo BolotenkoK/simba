@@ -15,6 +15,12 @@
         <div class="navbar navbar-default" role="navigation">
             <div class="container">
                 <div class="navbar-header">
+                    <div class="user-authorization visible-xs">
+                        <a class="user-authorization__link" href="#">
+                            <div class="user-authorization__icon"></div>
+                            <span>Вход <br>в B2B</span>
+                        </a>
+                    </div>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -35,7 +41,7 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right navbar-user-block">
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">RUS<b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle language-toggle" data-toggle="dropdown">RUS<b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">UA</a></li>
                                 <li><a href="#">ENG</a></li>
@@ -43,13 +49,73 @@
                         </li>
                         <li class="user-authorization">
                             <a class="user-authorization__link" href="#">
-                                <span class="glyphicon glyphicon-user"></span>Вход в B2B
+                                <div class="user-authorization__icon"></div>
+                                Вход в B2B
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+        <div class="customer-nav navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand-logo" href="#">
+                        <img class="brand-logo__icon" src="logo.png" alt="Simba-logo">
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <div class="top-nav-wrap">
+                        <ul class="nav navbar-nav navigation-block">
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Торговые марки</a></li>
+                            <li><a href="#">Сотрудничество</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li class="active"><a href="#">Главная</a></li>
+                        </ul>
+                    </div>
+                    <div class="mid-nav-wrap">
+                        <ul class="nav navbar-nav navbar-right navbar-user-block">
+                            <li class="navbar-search">
+                                <form class="navbar-form" action="/action_page.php">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Поиск по каталогу...">
+                                        <div class="input-group-btn">
+                                            <button class="search-btn" type="submit">
+                                                <a href="#"></a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="catalog-item">
+                                <a href="#">
+                                    <div class="catalog-item__icon">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <span class="catalog-item__caption">Каталог</span>
+                                </a>
+                            </li>
+                            <li class="user-authorization">
+                                <a class="user-authorization__link" href="#">
+                                    <div class="user-authorization__icon"></div>
+                                    <span class="user-authorization__arrow"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </header>
     <div id="mainCarousel" class="carousel slide" data-ride="carousel">
         <!-- Wrapper for slides -->
@@ -174,11 +240,114 @@
                 </div>
                 <div class="col-xs-12 col-sm-5">
                     <button class="index__button">
-                        <span>Читать больше</span>
+                        <a href="#">
+                            <span>Читать больше</span>
+                        </a>
                     </button>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="about-company">
+        <div class="container">
+            <h2 class="about-company__title block__title">
+                О компании
+            </h2>
+        </div>
+        <hr class="dots-delimiter"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 about-company__picture-wrap">
+                    <img class="about-company__picture" src="illustration_about.png" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-8">
+                    <p class="about-company__text">
+                        Ми раді вітати Вас в інтернет - магазині дитячих товарів SimbaBaby.<br><br>
+                        Великий досвід команди SimbaBaby на ринку оптової продажі дитячими товарами 
+                        – це гарантія якісних та вигідних покупок наших клієнтів по всій Україні.<br><br>
+                        Наша команда поновлює асортимент з врахуванням тенденцій на ринку: 
+                        ми вибрали товари від перевірених виробників, які пропонують виключно якісну 
+                        продукцію за кращими цінами.
+                    </p>
+                    <button class="index__button">
+                        <a href="#">
+                            <span>Читать больше</span>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="catalog-online">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <h2 class="catalog-online__title block__title">
+                        Каталог онлайн
+                    </h2>
+                    <p class="catalog-online__text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Rem culpa deserunt exercitationem est ex fugiat! A pariatur 
+                        nemo vero, quos 
+                        deserunt recusandae ad ducimus laudantium unde odit, in ipsa nisi.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Maiores eum cupiditate iure totam at et sint, quaerat voluptatibus 
+                        inventore fugiat. Repudiandae 
+                        fuga voluptatibus aliquam odit inventore nobis adipisci id quas.
+                    </p>
+                    <button class="index__button">
+                        <a href="#">
+                            <span>Прейти в каталог</span>
+                        </a>
+                    </button>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <img src="illustrations/notebook.png" alt="" class="catalog-online__icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="become-a-partner">
+        <hr class="dots-delimiter">
+        <div class="becom-a-partner__green-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 advantages">
+                        <div class="advantages__row">
+                            <div class="advantages__item">
+                                <img src="icons_simba/love.svg" alt="" class="advantages__icon">
+                                <p class="advantages__caption">
+                                    Компания-импортер
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advantages__row"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <h2 class="become-a-partner__title block__title">
+                            Стать партнером
+                        </h2>
+                        <p class="catalog-online__text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Rem culpa deserunt exercitationem est ex fugiat! A pariatur
+                            nemo vero, quos
+                            deserunt recusandae ad ducimus laudantium unde odit, in ipsa nisi.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Maiores eum cupiditate iure totam at et sint, quaerat voluptatibus
+                            inventore fugiat. Repudiandae
+                            fuga voluptatibus aliquam odit inventore nobis adipisci id quas.
+                        </p>
+                        <button class="index__button">
+                            <a href="#">
+                                <span>Читать больше</span>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="green-wrap__delimiter" src="illustrations/form2.svg" alt="">
+        <img class="block-delimiter" src="illustrations/form4.svg" alt="">
     </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
